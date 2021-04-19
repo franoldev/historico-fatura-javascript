@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Histórico de Fatura</title>
+</head>
+
+<body>
+    <div class="container">
+        <br />
+        <table class="table table-list" id="tb_consolidado">
+            <thead class="thead-dark">
+                <tr id="total">
+                    <th scope="col">Mês</th>
+                    <th scope="col">Total Gasto</th>
+                </tr>
+            </thead>
+            <tbody id="tbody_consolidado"></tbody>
+        </table>
+    </div>
+
+    <table class="table" id="tb_fatura">
+        <thead>
+            <tr id="lancamento">
+                <th scope="col">Lançamentos</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Mês de Lançamento</th>
+            </tr>
+        </thead>
+    </table>
+    <div>
+        <form id="form">
+            <div class="form-control">
+                <label for="name">Nome</label>
+                <input autofocus type="text" id="name" placeholder="Nome da transação" />
+            </div>
+
+            <div class="form-control">
+                <label for="value">Valor
+                </label>
+                <input type="number" id="value" placeholder="Valor da transação" />
+            </div>
+
+            <div class="form-control">
+                <label for="month">Mês
+                </label>
+                <input type="number" id="month" placeholder="Mês da transação" />
+            </div>
+
+            <button type="submit" class="btn">Adicionar</button>
+        </form>
+    </div>
+
+    </div>
+
+    <script src="list.js"></script>
+</body>
+
+</html>
